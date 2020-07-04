@@ -1,10 +1,10 @@
-**Webstore for La Resistace Media**
+# Webstore for La Resistace Media
 Allows to purchase digital assets with a credit card and download material stored in S3.
 
 Technology
 Express, React, Stripe, styled components, bootstrap, Amazon S3, Postgres, Heroku
 
-# Setup
+**Setup**
 1. Run `yarn install` in the main directory and in the `/client` directory. This last one is the front end application.
 
 2. Create an `.env` file in both the main directory and the `/client` directory. Fill in the env variables in the respectve `.env.sample` files.
@@ -28,13 +28,13 @@ https://www.taniarascia.com/node-express-postgresql-heroku/
 
 **Useful commands**
 
-# Login to heroku db
+*Login to heroku db*
 `heroku pg:psql postgresql-random-heroku-name --app your-app-name`
 
-Setting up remote heroku on a new mac
+*Setting up remote heroku on a new mac*
 `heroku git:remote -a project`
 
-# Run sql file on production (examples)
+*Run sql file on production (examples)*
 `cat init.sql | heroku pg:psql postgresql-random-heroku-name --app your-app-name`
 
 `cat sql_files/add_transactions_table.sql | heroku pg:psql postgresql-encircled-81059 --app your-app-name`
